@@ -1,0 +1,48 @@
+{
+  "name": "flowbite-react-template-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "postinstall": "flowbite-react patch"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.74.7",
+    "@tanstack/react-query-devtools": "^5.74.3",
+    "flowbite-react": "^0.11.7",
+    "framer-motion": "^12.23.24",
+    "jotai": "^2.12.3",
+    "lucide-react": "^0.501.0",
+    "pnpm": "^10.8.1",
+    "pocketbase": "0.24.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.55.0",
+    "react-router": "^7.5.0",
+    "react-router-dom": "^7.5.2",
+    "recharts": "^3.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@tailwindcss/vite": "^4.0.15",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.0.15",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  }
+}

@@ -1,10 +1,14 @@
 import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 import flowbiteReact from "flowbite-react/plugin/vite";
 
 export default defineConfig({
-  plugins: [react(), tailwindcss(), flowbiteReact()],
+  base: "/Model-UN-App-Final/", // <-- GitHub Pages base path
+  plugins: [
+    react(),
+    flowbiteReact()
+  ],
   server: {
     proxy: {
       "/api": {

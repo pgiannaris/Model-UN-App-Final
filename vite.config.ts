@@ -1,12 +1,13 @@
 import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 import flowbiteReact from "flowbite-react/plugin/vite";
 
 export default defineConfig({
-  base: "/Model-UN-App-Final/", // <-- GitHub Pages base path
+  base: "/Model-UN-App-Final/", // GitHub Pages base path
   plugins: [
     react(),
+    tailwindcss(),
     flowbiteReact()
   ],
   server: {
